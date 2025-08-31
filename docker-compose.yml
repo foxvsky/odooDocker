@@ -35,7 +35,7 @@ services:
     container_name: odoo18-pgadmin
     environment:
       - PGADMIN_DEFAULT_EMAIL=${ODOO_PGADMIN_USER}
-      - PGADMIN_DEFAULT_PASSWORD=${admin}
+      - PGADMIN_DEFAULT_PASSWORD=${ODOO_PGADMIN_PASSWORD}
     ports:
       - "5050:80"
     depends_on:
