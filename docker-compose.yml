@@ -37,7 +37,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=admin@hadigarden.com
       - PGADMIN_DEFAULT_PASSWORD=admin
     ports:
-      - "5050:5050"
+      - "5050:80"
     depends_on:
       - db
     restart: always
